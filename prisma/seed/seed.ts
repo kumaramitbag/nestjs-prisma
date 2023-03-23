@@ -5,13 +5,12 @@ const prisma = new PrismaClient();
 async function runSeeders() {
   // Users
   await Promise.all(
-    User.map(
-      async (user) =>
-        await prisma.user.upsert({
-          where: { email: user.email },
-          update: {},
-          create: user,
-        }),
+    User.map(async (user) =>
+      prisma.user.upsert({
+        where: { email: user.email },
+        update: {},
+        create: user,
+      }),
     ),
   );
 }
