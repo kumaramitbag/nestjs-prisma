@@ -1,8 +1,8 @@
 {
-  "name": "hello-prisma",
+  "name": "nestjs-prisma",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Amit Kumar",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
